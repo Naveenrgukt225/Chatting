@@ -23,13 +23,12 @@ body {
 }
 
 .container {
-    /* max-width: 500px; */
     width: 500px;
-    /* width: 100%; */
     background: rgba(0, 0, 0, 0.6);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 100%; /* Ensure container is responsive */
 }
 
 .input-field {
@@ -82,7 +81,6 @@ button {
     font-size: 16px;
     transition: 0.3s;
     width: 100%;
-    /* margin-top: 10px; */
     margin-bottom: 20px;
 }
 
@@ -115,4 +113,60 @@ button:hover {
     font-size: 16px;
     margin-bottom: 20px;
     text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust container width on tablets */
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .input-field input {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .input-field label {
+        font-size: 16px; /* Adjust label font size */
+    }
+
+    button {
+        font-size: 14px; /* Smaller font size for the button */
+    }
+
+    .messages-field {
+        font-size: 16px; /* Adjust font size of messages */
+    }
+
+    .id-field {
+        font-size: 14px; /* Smaller font size for ID field */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* Further reduce the width on smaller screens */
+        padding: 15px; /* Further reduce padding */
+    }
+
+    .input-field input {
+        font-size: 14px; /* Further reduce input font size */
+    }
+
+    .input-field label {
+        font-size: 14px; /* Adjust label font size */
+    }
+
+    button {
+        font-size: 12px; /* Further reduce font size for the button */
+        padding: 10px 18px; /* Adjust button padding */
+    }
+
+    .messages-field {
+        font-size: 14px; /* Adjust font size of messages */
+    }
+
+    .id-field {
+        font-size: 12px; /* Further reduce font size for ID field */
+    }
 }
