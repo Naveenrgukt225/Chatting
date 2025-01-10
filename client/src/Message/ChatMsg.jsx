@@ -10,7 +10,7 @@ const ChatMsg = () => {
   const [roomName, setRoomName] = useState("");  // for joining a room
 
   // For production, replace with your Vercel backend URL:
-  // const socket = useMemo(() => io("http://localhost:3000"), []);
+  // const socket = useMemo(() => io("https://chatting-app-lxbl.onrender.com"), []);
   // //  const socket = useMemo(() => io("https://chatting-group-server.vercel.app"), []); 
 
   // useEffect(() => {
@@ -24,7 +24,7 @@ const ChatMsg = () => {
   //   });
 
   
-  const socket = useMemo(() => io("http://localhost:3001"), []) ;
+  const socket = useMemo(() => io("https://chatting-app-lxbl.onrender.com"), []) ;
   useEffect(() => {
     socket.on("connect", () => {
         setSocketId(socket.id);
