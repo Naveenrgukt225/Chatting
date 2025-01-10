@@ -16,7 +16,7 @@ const server = createServer(app);
 // CORS setup
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:5173",  // Frontend URL
+        origin: "https://chatting-app-frontend-wigx.onrender.com/",  // Frontend URL
         methods: ["GET", "POST"],
         credentials: true,
     }
@@ -24,7 +24,7 @@ const io = new Server(server, {
 
 // Middleware for CORS
 app.use(cors({
-    origin: "http://localhost:5173",  // Frontend URL
+    origin: "https://chatting-app-frontend-wigx.onrender.com/",  // Frontend URL
     methods: ["GET", "POST"],
     credentials: true,
 }));
