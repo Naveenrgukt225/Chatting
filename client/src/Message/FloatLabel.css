@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e1e2f, #0e0e1a); /* Gradient background */
+    min-height: 100vh;
+    color: #fff;
+}
+
+.outer-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* max-width: 500px; */
+    width: 500px;
+    /* width: 100%; */
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field input {
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 2px solid #fff;
+    background: transparent;
+    outline: none;
+    color: #fff;
+}
+
+.input-field input:focus {
+    border-color: #07d970; /* Green border when focused */
+}
+
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #f3f3f3;
+    font-size: 18px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+    top: 0px;
+    font-size: 16px;
+    padding: 0 10px;
+    background: #191825;
+}
+
+button {
+    background-color: #07d970;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    width: 100%;
+    /* margin-top: 10px; */
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #06c160;
+}
+
+.messages-field {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 200px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.messages-field div {
+    background-color: rgba(7, 217, 112, 0.3);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    word-wrap: break-word;
+}
+
+.id-field {
+    color: #f3f3f3;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
